@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    /* Primary colors */
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    
+    /* Accents */
+    --blue: hsl(248, 32%, 49%);
+
+    /* Neutral */
+    --dark-blue: hsl(249, 10%, 26%); 
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+h1,
+p {
+    color: white;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    height: 75vh;
+}
+.left,
+.right {
+    flex: 1;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+.signUpSheet {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 60vh;
+}
+.trial,
+.signUpSheet,
+input {
+    border-radius: .8em;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 3em;
+}
+.signUpSheet p {
+    color: var(--grayish-blue)
+}
+input {
+    height: 15%;
+}
+.trial {
+    background-color: var(--blue);
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.button {
+    background-color: var(--green);
+    color: white;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: hsl(154, 58%, 71%);
+}
