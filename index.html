@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 
 </head>
+
 <main>
   <body>
     <div class="container">
@@ -20,25 +21,58 @@
         </p> 
       </div>
         
-        <div class="right">
+      <div class="right">
           <div class="trial">
-            <b>Try it free 7 days</b> then $20/mo. thereafter
+            <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
           </div>
-        
-          <div class="signUpSheet">
-            <div class="info">
-              <input type="text" placeholder="First Name">
-              <input type="text" placeholder="Last Name">
-              <input type="email" placeholder="Email Address">
-              <input type="password" placeholder="Password">
-              <input class="button" type="button" value="Claim your free trial"> 
+          
+          <form action="" method="post">
+            <div>
+              <label for="first_name"></label>
+              <input type="text" 
+                     id="first_name" 
+                     name="first_name"
+                     placeholder="First Name">
             </div>
-        
-            <p>
-              By clicking the button, you are agreeing to our <a href="#">Terms and Services.</a>
-            </p>
-          </div>
-        </div>
+
+            <div>
+              <label for="last_name"></label>
+              <input type="text"
+                     id="last_name"
+                     placeholder="Last Name">
+
+            </div>
+
+            <div>
+              <label for="user_email"></label>
+              <input type="email"
+                     placeholder="Email Address"
+                     id="user_email"
+                     name="user_email">  
+            </div>
+
+            <div>
+              <label for="user_password"></label>
+              <input type="password"
+                     id="user_password"
+                     name="password"
+                     placeholder="Password">  
+            </div>
+
+            <div>
+              <button type="submit">Claim your free trial</button>
+            </div>
+            
+            <div class="terms">
+              <p>
+                By clicking the button, you are agreeing to our terms and conditions
+              </p>
+  
+            </div>
+          </form>
+          
+          
+      </div>
     </div>
     
   </body>
